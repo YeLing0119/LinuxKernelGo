@@ -1,0 +1,15 @@
+# [LinuxKernelGo](https://github.com/RocketKernel/LinuxKernelGo)
+
+> 这个项目是我们小组学习Linux内核的地方！
+
+## 进程管理
+
+![Image discription](https://github.com/RocketKernel/LinuxKernelGo/blob/master/pic/ps.gif)
+
+- 调度策略
+
+- 体系结构相关的部分
+
+- 体系结构无关的部分
+
+- 系统调用接口
