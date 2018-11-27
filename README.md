@@ -4,7 +4,7 @@
 
 ## Process Scheduler
 
-![ps](https://github.com/RocketKernel/LinuxKernelGo/tree/master/pic/ps.gif)
+[ps](https://github.com/RocketKernel/LinuxKernelGo/tree/master/pic/ps.gif)
 
 - Scheduling Policy
 
