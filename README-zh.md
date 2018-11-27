@@ -1,4 +1,4 @@
-# LinuxKernelGo
+# [LinuxKernelGo](https://github.com/RocketKernel/LinuxKernelGo)
 
 > 这个项目是我们小组学习Linux内核的地方！
 
