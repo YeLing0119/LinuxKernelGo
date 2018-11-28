@@ -5,7 +5,7 @@
 > This project is where our group studies the linux kernel!
 
 ## Kernel Edition 
-4.20.0-rc4
+4.19.5
 
 ## Process Scheduler
 
