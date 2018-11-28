@@ -4,6 +4,9 @@
 
 > This project is where our group studies the linux kernel!
 
+## Kernel Edition 
+4.20.0-rc4
+
 ## Process Scheduler
 
 ![Image discription](https://github.com/RocketKernel/LinuxKernelGo/blob/master/pic/ps.gif)
