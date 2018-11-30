@@ -37,11 +37,11 @@ int checkCPU(void)
 > 对于读指令：
 > - 当处理器在等待数据从缓存或者内存返回时，对于乱序执行的处理器，可以执行后面的指令；对于顺序执行的处理器，会使流水线停顿，直到读取的数据返回
 > - 如下图所示，在x86微处理器经典架构中，存储指令从L1指令cache中读取指令，L1指令cache会做指令加载、指令预取、指令预解码、以及分支预测。然后进入Fetch & Decode单元，会把指令解码成macro-ops微操作指令，然后由Dispatch部件发到Integer Unit或者FloatPoint Unit.
-> - - Integer Unit由Integer Scheduler和Execution Unit组成，Execution Unit包含算术逻辑单元(arithmetic-logic unit, ALU)和地址生成单元(address generation unit, AGU)在ALU计算完成之后进入AGU，计算有效地址完毕后，将结果发送到LSQ部件。
-> - - LSQ部件首先根据处理器系统要求的内存一致性(memory consistency)模型确定访问时序，另外LSQ还需要处理存储器指令间的依赖关系，最后LSQ需要准备L1 cache使用的地址，包括有效地址的计算和虚实地址转换，将地址发送到L1 Data Cache中。
-> - - ![x86mpu](https://github.com/RocketKernel/LinuxKernelGo/blob/master/pic/x86mpu.png)
+>   - Integer Unit由Integer Scheduler和Execution Unit组成，Execution Unit包含算术逻辑单元(arithmetic-logic unit, ALU)和地址生成单元(address generation unit, AGU)在ALU计算完成之后进入AGU，计算有效地址完毕后，将结果发送到LSQ部件。
+>   - LSQ部件首先根据处理器系统要求的内存一致性(memory consistency)模型确定访问时序，另外LSQ还需要处理存储器指令间的依赖关系，最后LSQ需要准备L1 cache使用的地址，包括有效地址的计算和虚实地址转换，将地址发送到L1 Data Cache中。
+>   - ![x86mpu](https://github.com/RocketKernel/LinuxKernelGo/blob/master/pic/x86mpu.png)
 > - 如下图所示，在ARM Cortex-A9处理器中，存储指令首先通过主存储器或者L2 cache加载到L1指令cache中。在指令预取阶段(instruction prefetch stage)，主要是做指令预取和分支预测，然后指令通过Instruction Queue队列被送到解码器进行指令的解码工作
-> - - ![CortexA9](https://github.com/RocketKernel/LinuxKernelGo/blob/master/pic/Cortex_A9.png)
+>   - ![CortexA9](https://github.com/RocketKernel/LinuxKernelGo/blob/master/pic/Cortex_A9.png)
 
 ### 部分术语
 -  **超标量体系结构(Superscalar Architecture)：**是描述一种微处理器设计理念，它能够在一个时钟周期执行多个指令
