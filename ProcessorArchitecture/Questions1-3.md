@@ -44,7 +44,7 @@ int checkCPU(void)
 >     ![CortexA9](https://github.com/RocketKernel/LinuxKernelGo/blob/master/pic/Cortex_A9.png)
 
 ### 部分术语
-> ** 超标量体系结构(Superscalar Architecture)： **是描述一种微处理器设计理念，它能够在一个时钟周期执行多个指令
+> 超标量体系结构(Superscalar Architecture)： 是描述一种微处理器设计理念，它能够在一个时钟周期执行多个指令
 
 > 乱序执行(Out-of-order Execution)：指CPU采用了允许将多条指令不按程序规定的顺序分开发送给各相应电路单元处理的技术，避免处理器在计算对象不可获取时的等待，从而导致流水线停顿
 
