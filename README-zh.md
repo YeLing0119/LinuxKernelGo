@@ -2,6 +2,9 @@
 
 > 这个项目是我们小组学习Linux内核的地方！
 
+## 内核版本
+4.19.5
+
 ## 进程管理
 
 ![Image discription](https://github.com/RocketKernel/LinuxKernelGo/blob/master/pic/ps.gif)
