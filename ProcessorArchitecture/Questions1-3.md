@@ -61,3 +61,4 @@ int checkCPU(void)
 > ALU算术逻辑单元：ALU是处理器的执行单元，主要是进行算术运算，逻辑运算和关系运算的部件
 
 > LSQ/LSU部件(Load Store Queue/Unit)：LSQ部件是指令流水线的一个执行部件，其主要功能是将来自CPU的存储器请求发送到存储器子系统，并处理其下存储器子系统的应答数据和消息
+``main(void)``
